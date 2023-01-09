@@ -17,9 +17,11 @@
 
                 <tr>
                     <td>{{$movie->id}}</td>
-                    <a href="{{route('movieDetail' , $movie->id)}}"> <td>{{$movie->title}}</td></a>
+                    <td>
+                        <a href="{{route('movieDetail' , $movie->id)}}">{{$movie->title}}</a>
+                    </td>
                     <td>{{$movie->vote}}</td>
-                </tr>
+                  </tr>
 
         @endforeach
         </tbody>
